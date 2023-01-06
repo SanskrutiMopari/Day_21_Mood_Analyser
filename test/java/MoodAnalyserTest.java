@@ -7,14 +7,14 @@ public class MoodAnalyserTest {
 
     @BeforeEach
     public void setUp() {
-        object = new MoodAnalyser("I am in Sad Mood");
+        object = new MoodAnalyser("I am in Happy Mood");
     }
 
     @Test
     public void moodAnalyser() {
 
         String ans = object.moodAnalyser();
-        Assertions.assertEquals("Sad", ans);
+        Assertions.assertEquals("Happy", ans);
         System.out.println(ans);
     }
 }
