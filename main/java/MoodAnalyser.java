@@ -1,6 +1,8 @@
 public class MoodAnalyser {
 
-    public static void main(String[] args) {
-        System.out.println("Welcome");
+    public String moodAnalyser(String message) {
+        if (message.contains("Sad"))
+            return "SAD";
+        return "Happy";
     }
 }
